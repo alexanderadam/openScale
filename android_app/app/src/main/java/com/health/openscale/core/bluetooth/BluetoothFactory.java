@@ -116,6 +116,9 @@ public class BluetoothFactory {
         if (deviceName.startsWith("Shape200") || deviceName.startsWith("Shape100") || deviceName.startsWith("Shape50") || deviceName.startsWith("Style100")) {
             return new BluetoothSoehnle(context);
         }
+        if (deviceName.startsWith("AAA006")) {
+            return new BluetoothIcomon(context);
+        }
         return null;
     }
 }
